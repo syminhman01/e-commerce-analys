@@ -1,0 +1,19 @@
+--Find the best selling product in each category
+
+WITH sales_products AS (
+	SELECT p.category,
+			p.product ,
+			SUM(es.sales) AS total_sales
+	FROM e_commerce.ecom_sales es 
+	JOIN e_commerce.product p 
+		ON es.product_code =p.product_code 
+	GROUP BY p.category,
+			p.product
+)
+SELECT *
+FROM ( 
+	SELECT *,
+			ROW_NUMBER() OVER(PARTITION BY category ORDER BY total_sales DESC) AS rank_no
+	FROM sales_products
+) t
+WHERE t.rank_no =1;
