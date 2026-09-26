@@ -11,7 +11,7 @@ The dataset contains:
 - sales transactions
 
 ## Key Analyses
-1. Overall business metrics
+1. Overall business mxcfgerferfetrics
 2. Sales by category and region
 3. Top products and customers
 4. Product contribution within category
