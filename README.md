@@ -36,5 +36,5 @@ The dataset contains:
 
 * Body care dominates profitability across most regions
 * Revenue growth shows seasonal patterns
-* A small set of products contributes significantly to total revenuer4fgrfrfrfg
+* A small set of products contributes significantly to total revenuer4fgrfrfrfghi
 
